@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TextInput, View } from 'react-native';
+import {InputAccessoryView, Text, TextInput, View} from 'react-native';
 
 export default function ExampleScreen() {
   return (
@@ -10,6 +10,11 @@ export default function ExampleScreen() {
       <TextInput style={{height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10, marginHorizontal: 20, padding: 5, borderRadius: 10, }}
         testID='ExampleTextInputId'
       />
+    <InputAccessoryView>
+        <TextInput style={{height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10, marginHorizontal: 20, padding: 5, borderRadius: 10, }}
+           testID='ExampleTextInputAccessoryId'
+        />
+    </InputAccessoryView>
     </View>
   );
 }
